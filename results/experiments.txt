@@ -1,0 +1,8 @@
+== m1_no_exists_check.py
+2 failed, 14 passed in 0.05s
+== m2_wrong_mode.py
+2 failed, 14 passed in 0.07s
+== m3_swallow_json_error.py
+5 failed, 11 passed in 0.03s
+== refactor_pathlib.py
+15 failed, 1 passed in 0.18s

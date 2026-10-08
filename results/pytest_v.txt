@@ -1,0 +1,25 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.14.8, pytest-8.3.3, pluggy-1.6.0 -- venv/bin/python
+cachedir: .pytest_cache
+rootdir: .
+plugins: cov-7.1.0
+collecting ... collected 16 items
+
+tests/test_service.py::test_load_success PASSED                          [  6%]
+tests/test_service.py::test_load_various_valid_contents[{"debug": true}-expected0] PASSED [ 12%]
+tests/test_service.py::test_load_various_valid_contents[{"port": 8080, "host": "localhost"}-expected1] PASSED [ 18%]
+tests/test_service.py::test_load_various_valid_contents[{"nested": {"a": [1, 2, 3]}}-expected2] PASSED [ 25%]
+tests/test_service.py::test_load_various_valid_contents[{}-expected3] PASSED [ 31%]
+tests/test_service.py::test_load_non_object_json_is_returned_as_is PASSED [ 37%]
+tests/test_service.py::test_file_not_found PASSED                        [ 43%]
+tests/test_service.py::test_permission_denied PASSED                     [ 50%]
+tests/test_service.py::test_path_is_directory PASSED                     [ 56%]
+tests/test_service.py::test_invalid_json_content[{bad json] PASSED       [ 62%]
+tests/test_service.py::test_invalid_json_content[] PASSED                [ 68%]
+tests/test_service.py::test_invalid_json_content[not json at all] PASSED [ 75%]
+tests/test_service.py::test_invalid_json_content[{"a": }] PASSED         [ 81%]
+tests/test_service.py::test_json_load_error_is_propagated PASSED         [ 87%]
+tests/test_service.py::test_exists_error_is_propagated PASSED            [ 93%]
+tests/test_service.py::test_file_handle_is_closed_after_read PASSED      [100%]
+
+============================== 16 passed in 0.03s ==============================
